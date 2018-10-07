@@ -111,11 +111,14 @@ header{
     border:0;
     height:850px;
     background-image: url(../resourse/image/title.jpg);
+    background-position: center;
 }
 .head1{
     border-width: 1px;margin: 0 30px 30px 30px;
     border-style:none;
     padding: 25px;
+    
+    
 }
 .head2{ font-size:  16px;
     box-shadow: 0px 2px 1px #a4c3d0;
