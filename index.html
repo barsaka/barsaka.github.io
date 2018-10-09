@@ -1,20 +1,19 @@
 <!doctype html>
-<html class="no-js" lang="zh-CN">
+<html class="no-js" lang="">
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  
+  <title>综漫导航</title>
   <meta name="description" content="this website is for sharing the animation news and something">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
   <link rel="manifest" href="site.webmanifest">
-  <title>综漫导航</title>
   <link rel="apple-touch-icon" href="resourse/titleimage/pico.png">
   <link rel="shortcut icon" href="resourse/titleimage/pico.png" type="image/x-icon">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/slide.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -22,10 +21,9 @@
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
+  <script src="js/vue.js"></script>
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
@@ -35,7 +33,10 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-  <header>
+  <div class="wrap">
+    <div class="main1">
+  
+
     
       <!--the true title-->
       <div class="head1">
@@ -43,7 +44,7 @@
           <h2 id="headleft">到达想像的极限</h2>
           <h2 id="headright">分享动漫的快乐</h2>
     </div>
-  </header>
+  
     <div class="head2">
         <ul>
           <li>好站分享</li>
@@ -61,7 +62,7 @@
 
   <!--the main things-->
 <div id="main">
-  <div id="mainin">
+  
 
   
     <div id="right">
@@ -97,43 +98,20 @@
         </div>
     
         <div id="left">
-            <div class=rolling >
-              <div class=rolling-head>
-          <h1>10月热映新番。。.|ω・）</h1>
-          <h1 class=rolling-head-right><button>></button></h1>
-          <h1 class=rolling-head-left><button><</button></h1>
-        </div>
-          <ul id=roll style="background: #ffffff;">
-            <li><a target="_blank" href="https://www.bilibili.com/bangumi/play/ss25739/?spm_id_from=333.334.ranking_timing_bangumi">
-              <img src="resourse/rolling/shilaimu.png" alt="关于转生成史莱姆这件事" >
-              <p>关于我转生变成史莱姆这档事</p>
-              </a>
-            </li>
-            <li><a target="_blank" href="https://www.bilibili.com/bangumi/play/ss24596/?spm_id_from=333.334.ranking_timing_bangumi">
-              <img src="resourse/rolling/overload.jpg" alt="overload3">
-            <p>OVERLORD Ⅲ</p>
-            </a></li>
-            <li><a target="_blank" href="https://www.bilibili.com/bangumi/play/ss24588/?spm_id_from=333.334.ranking_timing_bangumi">
-              <img src="resourse/rolling/workcell.png" alt="工作细胞">
-              <p>工作细胞</p>
-            </a></li>
-            <li><a target="_blank" href="https://www.bilibili.com/bangumi/play/ss23858/?spm_id_from=333.334.ranking_timing_bangumi">
-              <img src="resourse/rolling/myhero.png" alt="我的英雄学院" >
-              <p>我的英雄学院第三部
-              </p>
-            </a></li>
-            <li><a target="_blank" href="https://www.bilibili.com/bangumi/play/ss24625/?spm_id_from=333.334.ranking_timing_bangumi">
-              <img src="resourse/rolling/angleofdezth.png" alt="Angels of Death" >
-              <p> Angels of Death</p>
-            </a></li>
-            <li><a target="_blank" href="https://www.bilibili.com/bangumi/play/ss24602/?spm_id_from=333.334.ranking_timing_bangumi">
-              <img src="resourse/rolling/renya.png" alt="刃牙" >
-              <p>刃牙</p>
-            </a></li>
-            <li><a target="_blank" href="">
-              <img src="resourse/rolling/" alt="" ></a></li>
-            <li><a target="_blank" href="resourse/rolling/"><img src="" alt="" ><p></p></a></li>            
-          </ul>
+          <div class=rolling >
+            <h1>rock and roll!!!</h1>
+                <div class="carousel-wrap" id="carousel">
+                    <transition-group tag="ul" class='slide-ul' name="list">
+                      <li v-for="(list,index) in slideList" :key="index" v-show="index===currentIndex" @mouseenter="stop" @mouseleave="go">
+                          <a :href="list.clickUrl" >
+                      <img :src="list.image" :alt="list.desc">
+                          </a>
+                      </li>
+                        </transition-group>
+                        <div class="carousel-items">
+                      <span v-for="(item,index) in slideList.length" :class="{'active':index===currentIndex}" @mouseover="change(index)"></span>
+                        </div>
+                </div>
         </div>
         <hr style="width:80%;height:2px;border:none;border-top:2px dotted #185598;" />
         <div class="text">
@@ -158,16 +136,16 @@
           <hr style="width:80%;height:2px;border:none;border-top:2px dotted #185598;" />     
   </div>
 </div>
-<footer>
+</div>
+<div class="footer">
   <h1>&nbsp;&nbsp;&nbsp;&nbsp;这里是页脚,所以大概是联系作者什么的<img src="img/gif/nihao.gif" alt="你好"></h1>
   <p> &nbsp;&nbsp;大概要写上联系作者什么的吧，毕竟是用来做简历展示的.然后这个是这是国庆节期间两天做出来的，有点赶，很多地方都有点问题。<br/>
     &nbsp;&nbsp;嗯，作者之前是做数据管理的，之后觉得不想做了，想做点更有趣，发展面更广的职业，所以学了HTML5.css3.js.和jquery。对了这个网站的基本架构是github的Boilerplate，内容都是作者做的<br/>
     &nbsp;&nbsp;因为之前做数据管理，主要是对生物测序文件的拆分和分类脚本的使用维护，所以对linux,linux bash,perl，比较熟悉。所以有意招聘前端的HR们，可以看看我的简历哦，谢谢！
   </p>
-  <h2><a href="index2.html">查看作者简历</a></h2>
-</footer>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <h2><a target="_blank" href="index2.html">查看作者简历</a></h2>
+</div>
+<script src="main.js"></script>
 </body>
+
 </html>
