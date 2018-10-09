@@ -12,137 +12,125 @@
   <link rel="apple-touch-icon" href="resourse/titleimage/pico.png">
   <link rel="shortcut icon" href="resourse/titleimage/pico.png" type="image/x-icon">
   <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="css/normalize.css">
+  
+  <link rel="stylesheet" href="css/slide.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
   <!--[if lte IE 9]>
+      <script src="js/jquery.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
+  <script src="js/vue.js"></script>
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-  <div class="writer">
-    
-      <!--the true title-->
-      <div class="writer-head">
-          <h1>作者简介</h1>
-          <h2 id="headleft">好好学习，天天向上</h2>
-          <h2 id="headright">努力工作，努力挣钱</h2>
-    </div>
-  </div>
-    <div class="head2">
-        <ul>
-          <li>好站分享</li>
-          <li><a target="_blank" href="https://stackoverflow.com/">stackoverflow</a></li>
-          <li><a target="_blank" href="https://www.w3.org/standards/">W3Cshool</a></li>
-          <li><a target="-blank" href="https://www.csdn.net/">CSDN</a></li>
-          <li><a target="_blank" href="https://www.npmjs.com/">NPM</a></li>
-          <li><a target="_blank" href="http://www.runoob.com/">RUNNOOD</a></li>
-          </ul>
-      </div>
-<!--the true title-->
-  
 
 
-
-  <!--the main things-->
-<div id="main">
-  <div id="mainin">
-
-  
-    <div id="right">
-      <h1>需要了解：</h1>
-        <ul>
-          <li><a target="_blank" href="https://blog.csdn.net/illbehere/article/details/53908385">
-            <img src="resourse/writer/linux1.jpg"></a>
-            <h1> Shell脚本在Linux下运行错误的解决方法</h1>
-            <p>当在Linux下写好一个脚本之后保存在windows上，在Windows上修改以后再传到Linux上，可能脚本就不能执行了<br/>
-                出现这种错误的原因是因为：CR/LF问题，在dos/window下按一次回车键实际上输入的是“回车（CR)”和“换行（LF）”，而Linux/unix下按一次回车键只输入“换行（LF）”，所以修改的sh文件在每行都会多了一个CR，所以Linux下运行时就会报错找不到命令。<br/>
-                </p>
-          </li>
-
-          <li><a target="_blank" href="https://news.dmzj.com/article/47465.html">
-            <img src="img/haizeiwang.jpg">
-            <h1> 网友投票有趣到睡不着觉的长篇漫画！</h1>
-            <p>日本的漫画作品数量众多，登载的媒体也各有不同。不过大多数的漫画都会以单行本的方式发售，其中部分长寿作品的单行本能达到上百册，读一整天可能也读不完。那么有哪些作品是有趣到让人看到睡不着觉的漫画呢？</p>
-          </a></li>
-          <li><a target="-blank" href="https://news.dmzj.com/article/47464.html">
-            <img src="img/youxiwang.jpg">
-            <h1> 游戏王历史：从零开始的游戏王环境之旅第一期</h1>
-            <p>充满男人浪漫的金属化怪兽的诞生后，游戏王OCG开始出现了不少金属爱好家。但【黑暗大法师】牌组一家独大的状况没有改变，【GoodStuff】牌组被挤到了一个尴尬的境地。决斗时只需要看“变形壶”是否能够起效，这已经不是【黑暗大法师】与【Good St...</p>
-          </a></li>
-          <li><a target="_blank" href="https://news.dmzj.com/article/47460.html">
-            <img src="img/workcell.jpg">          
-            <h1> 动画《工作细胞》向教育机关与医疗设施无偿提供部</h1>  
-            <p>目前，TV动画《工作细胞》已经完结。在本作中，将细胞拟人化并配合着一段段小故事讲述了细胞工作的原理。这样寓教于乐的内容，受到了不少人的好评。首此影响，这次官方决定向教育机关与医疗设施免费公开一部分素材。</p>
-          </a></li>
-          <li><a target="_blank" href="https://news.dmzj.com/article/47467.html">
-            <img src="img/coverwork.jpg">
-            <h1>CloverWorks正式从A-1 Pictures分离成为独立公司</h1>
-          <p>今日动画制作公司CloverWorks于官网上公布正式从A-1 Pictures分离，成为独立公司。
-          </p></a></li>
-        </ul>
-        </div>
-    
-        <div id="left">
-            <div class=rolling >
-          <h1>perl linux 操作简要汇总</h1>
-          <ul>
-            <li><img src="resourse/rolling/shilaimu.png" alt="关于转生成史莱姆这件事" >
-              <p>更改文件权限</p>
-              <p>大概是linux系统管理的一个小技巧$chomd -R 755(也有644什么的) file</p>
-              <p>linux系统主要的</p>
-              </a>
-            </li>
-            <li><img src="resourse/rolling/overload.jpg" alt="overload3">
-            <p>OVERLORD Ⅲ</p>
-            </a></li>
-            <li><img src="resourse/rolling/workcell.png" alt="工作细胞">
-              <p>工作细胞</p>
-            </a></li>
-            <li><img src="resourse/rolling/myhero.png" alt="我的英雄学院" >
-              <p>我的英雄学院第三部
-              </p>
-            </a></li>
-            <li><img src="resourse/rolling/angleofdezth.png" alt="Angels of Death" >
-              <p> Angels of Death</p>
-            </a></li>
-            <li><img src="resourse/rolling/renya.png" alt="刃牙" >
-              <p>刃牙</p>
-            </a></li>
-            <li><a target="_blank" href="">
-              <img src="resourse/rolling/" alt="" ></a></li>
-            <li><a target="_blank" href="resourse/rolling/"><img src="" alt="" ><p></p></a></li>
-            
-          </ul>
-        </div>
-        <div class="text">
-          <ul>
-            <li><a target="_blank" href=""></a><h2>
-            </h2></li>
-          </ul>
-        </div>
+  <div class="wrap">
+    <div class="main1">
+        <div class="writer">
+            <!--the true title-->
+            <div class="writer-head">
+                <h1>作者简介</h1>
+                <h2 id="headleft">好好学习，天天向上</h2>
+                <h2 id="headright">努力工作，努力挣钱</h2>
           </div>
+        </div>
+        <div class="head2">
+              <ul>
+                <li>好站分享</li>
+                <li><a target="_blank" href="https://stackoverflow.com/">stackoverflow</a></li>
+                <li><a target="_blank" href="https://www.w3.org/standards/">W3Cshool</a></li>
+                <li><a target="-blank" href="https://www.csdn.net/">CSDN</a></li>
+                <li><a target="_blank" href="https://www.npmjs.com/">NPM</a></li>
+                <li><a target="_blank" href="http://www.runoob.com/">RUNNOOD</a></li>
+                </ul>
+        </div>
+        <div id="main">
+          <div id="time">
+            {{ message }} 
+          </div>
+          <div id="right">
+              <h1>需要了解：</h1>
+                <ul>
+                  <li><a target="_blank" href="https://blog.csdn.net/illbehere/article/details/53908385">
+                    <img src="resourse/writer/linux1.jpg">
+                    <h1> Shell脚本在Linux下运行错误的解决方法</h1>
+                    <p>当在Linux下写好一个脚本之后保存在windows上，在Windows上修改以后再传到Linux上，可能脚本就不能执行了<br/>
+                        出现这种错误的原因是因为：CR/LF问题，在dos/window下按一次回车键实际上输入的是“回车（CR)”和“换行（LF）”，而Linux/unix下按一次回车键只输入“换行（LF）”，所以修改的sh文件在每行都会多了一个CR，所以Linux下运行时就会报错找不到命令。<br/>
+                        </a></p>
+                  </li>
+                  <li><a target="_blank" href="https://news.dmzj.com/article/47465.html">
+                    <img src="img/haizeiwang.jpg">
+                    <h1> 网友投票有趣到睡不着觉的长篇漫画！</h1>
+                    <p>日本的漫画作品数量众多，登载的媒体也各有不同。不过大多数的漫画都会以单行本的方式发售，其中部分长寿作品的单行本能达到上百册，读一整天可能也读不完。那么有哪些作品是有趣到让人看到睡不着觉的漫画呢？</p>
+                  </a></li>
+                  <li><a target="-blank" href="https://news.dmzj.com/article/47464.html">
+                    <img src="img/youxiwang.jpg">
+                    <h1> 游戏王历史：从零开始的游戏王环境之旅第一期</h1>
+                    <p>充满男人浪漫的金属化怪兽的诞生后，游戏王OCG开始出现了不少金属爱好家。但【黑暗大法师】牌组一家独大的状况没有改变，【GoodStuff】牌组被挤到了一个尴尬的境地。决斗时只需要看“变形壶”是否能够起效，这已经不是【黑暗大法师】与【Good St...</p>
+                  </a></li>
+                  <li><a target="_blank" href="https://news.dmzj.com/article/47460.html">
+                    <img src="img/workcell.jpg">          
+                    <h1> 动画《工作细胞》向教育机关与医疗设施无偿提供部</h1>  
+                    <p>目前，TV动画《工作细胞》已经完结。在本作中，将细胞拟人化并配合着一段段小故事讲述了细胞工作的原理。这样寓教于乐的内容，受到了不少人的好评。首此影响，这次官方决定向教育机关与医疗设施免费公开一部分素材。</p>
+                  </a></li>
+                  <li><a target="_blank" href="https://news.dmzj.com/article/47467.html">
+                    <img src="img/coverwork.jpg">
+                    <h1>CloverWorks正式从A-1 Pictures分离成为独立公司</h1>
+                  <p>今日动画制作公司CloverWorks于官网上公布正式从A-1 Pictures分离，成为独立公司。</p>
+                  </a></li>
+                </ul>
+          </div>
+          <div id="left">
+          <div class=rolling >
+            <h1>rock and roll!!!</h1>
+                <div class="carousel-wrap" id="carousel">
+                    <transition-group tag="ul" class='slide-ul' name="list">
+                      <li v-for="(list,index) in slideList" :key="index" v-show="index===currentIndex" @mouseenter="stop" @mouseleave="go">
+                          <a :href="list.clickUrl" >
+                      <img :src="list.image" :alt="list.desc">
+                          </a>
+                      </li>
+                        </transition-group>
+                        <div class="carousel-items">
+                      <span v-for="(item,index) in slideList.length" :class="{'active':index===currentIndex}" @mouseover="change(index)"></span>
+                        </div>
+                </div>
+          </div>
+          <div class="text">
+              <ul>
+                <li><a target="_blank" href=""></a>
+                  <h1></h1>
+                  
+                </li>
+              </ul>
+          </div>
+        </div>
+        
 
+        </div>
+     
   </div>
-</div>
-<footer>
-  <h1>这里是页脚</h1>
-  <p>这里呢两页网站就都完了，国庆节时间比较紧，也不知道能完成到什么程度，不过这个网页我一定会一直做下去的。</p>
-  <h2><a href="index.html">返回主页</a></h2>
-</footer>
+  </div>
+
+  <div class="footer">
+      <h1>这里是页脚</h1>
+      <p>这里呢两页网站就都完了，国庆节时间比较紧，也不知道能完成到什么程度，不过这个网页我一定会一直做下去的。
+        </p>
+        <div id="time1">
+          {{ message }}
+        </div>
+      <h2><a href="index.html">返回主页</a></h2>
+  </div>
+<script src="main.js"></script>
 </body>
 
 </html>

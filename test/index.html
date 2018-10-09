@@ -1,0 +1,43 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+  
+  
+  
+  
+  <div class="wrap">
+        <div class="main">
+                <div id="app">
+                        {{ message }}
+                </div>
+                    <div class="carousel-wrap" id="carousel">
+                        <transition-group tag="ul" class='slide-ul' name="list">
+                          <li v-for="(list,index) in slideList" :key="index" v-show="index===currentIndex" @mouseenter="stop" @mouseleave="go">
+                              <a :href="list.clickUrl" >
+                          <img :src="list.image" :alt="list.desc">
+                              </a>
+                          </li>
+                            </transition-group>
+                            <div class="carousel-items">
+                          <span v-for="(item,index) in slideList.length" :class="{'active':index===currentIndex}" @mouseover="change(index)"></span>
+                            </div>
+                        </div>
+                       
+ 
+        </div>
+    </div>
+
+
+    <div class="footer">相对在底部</div> 
+  <script src="index.js"></script>
+</body>
+</html>
