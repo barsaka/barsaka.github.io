@@ -1,136 +1,161 @@
-<!doctype html>
-<html class="no-js" lang="">
-
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>作者简介</title>
-  <meta name="description" content="this website is for sharing the animation news and something">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="utf-8"> 
+    <title>作者页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="resourse/titleimage/pico.png" type="image/x-icon">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="resourse/titleimage/pico.png">
-  <link rel="shortcut icon" href="resourse/titleimage/pico.png" type="image/x-icon">
-  <!-- Place favicon.ico in the root directory -->
-  
-  <link rel="stylesheet" href="css/slide.css">
-  <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 </head>
-
 <body>
-  <!--[if lte IE 9]>
-      <script src="js/jquery.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
-  <script src="js/vue.js"></script>
-  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>作者简介</h1>
+  <p>2018年10月10日完成此页，嗯，作者今年26</p>
+  <p>现在工作：数据管理</p>
+  <p>想换的工作：前端工程师，web开发</p>
+  <p>技能：熟悉Linux系统，Linux bash语言，Perl语言，HTML5，英语六级</p>
+  <p>会使用bootstrap，vue1.0</p>
+  <p>联系方式：18868192355<br/>gmail:pang1172480053@gmail.com</p>
+  <p></p>
+  <p>本页所有信息（作者资料，学习资料链接）归作者所有，未经许可，请勿转载</p>
+</div>
 
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">学习网址导航</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">主页</a></li>
+        <li><a target="_blank" href="https://stackoverflow.com/">stackoverflow</a></li>
+            <li><a target="_blank" href="https://www.w3.org/standards/">W3Cshool</a></li>
+            <li><a target="-blank" href="https://www.csdn.net/">CSDN</a></li>
+            <li><a target="_blank" href="https://www.npmjs.com/">NPM</a></li>
+            <li><a target="_blank" href="http://www.runoob.com/">RUNNOOD</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-  <div class="wrap">
-    <div class="main1">
-        <div class="writer">
-            <!--the true title-->
-            <div class="writer-head">
-                <h1>作者简介</h1>
-                <h2 id="headleft">好好学习，天天向上</h2>
-                <h2 id="headright">努力工作，努力挣钱</h2>
-          </div>
-        </div>
-        <div class="head2">
-              <ul>
-                <li>好站分享</li>
-                <li><a target="_blank" href="https://stackoverflow.com/">stackoverflow</a></li>
-                <li><a target="_blank" href="https://www.w3.org/standards/">W3Cshool</a></li>
-                <li><a target="-blank" href="https://www.csdn.net/">CSDN</a></li>
-                <li><a target="_blank" href="https://www.npmjs.com/">NPM</a></li>
-                <li><a target="_blank" href="http://www.runoob.com/">RUNNOOD</a></li>
-                </ul>
-        </div>
-        <div id="main">
-          <div id="time">
-            {{ message }} 
-          </div>
-          <div id="right">
-              <h1>需要了解：</h1>
-                <ul>
-                  <li><a target="_blank" href="https://blog.csdn.net/illbehere/article/details/53908385">
-                    <img src="resourse/writer/linux1.jpg">
-                    <h1> Shell脚本在Linux下运行错误的解决方法</h1>
-                    <p>当在Linux下写好一个脚本之后保存在windows上，在Windows上修改以后再传到Linux上，可能脚本就不能执行了<br/>
-                        出现这种错误的原因是因为：CR/LF问题，在dos/window下按一次回车键实际上输入的是“回车（CR)”和“换行（LF）”，而Linux/unix下按一次回车键只输入“换行（LF）”，所以修改的sh文件在每行都会多了一个CR，所以Linux下运行时就会报错找不到命令。<br/>
-                        </a></p>
-                  </li>
-                  <li><a target="_blank" href="https://news.dmzj.com/article/47465.html">
-                    <img src="img/haizeiwang.jpg">
-                    <h1> 网友投票有趣到睡不着觉的长篇漫画！</h1>
-                    <p>日本的漫画作品数量众多，登载的媒体也各有不同。不过大多数的漫画都会以单行本的方式发售，其中部分长寿作品的单行本能达到上百册，读一整天可能也读不完。那么有哪些作品是有趣到让人看到睡不着觉的漫画呢？</p>
-                  </a></li>
-                  <li><a target="-blank" href="https://news.dmzj.com/article/47464.html">
-                    <img src="img/youxiwang.jpg">
-                    <h1> 游戏王历史：从零开始的游戏王环境之旅第一期</h1>
-                    <p>充满男人浪漫的金属化怪兽的诞生后，游戏王OCG开始出现了不少金属爱好家。但【黑暗大法师】牌组一家独大的状况没有改变，【GoodStuff】牌组被挤到了一个尴尬的境地。决斗时只需要看“变形壶”是否能够起效，这已经不是【黑暗大法师】与【Good St...</p>
-                  </a></li>
-                  <li><a target="_blank" href="https://news.dmzj.com/article/47460.html">
-                    <img src="img/workcell.jpg">          
-                    <h1> 动画《工作细胞》向教育机关与医疗设施无偿提供部</h1>  
-                    <p>目前，TV动画《工作细胞》已经完结。在本作中，将细胞拟人化并配合着一段段小故事讲述了细胞工作的原理。这样寓教于乐的内容，受到了不少人的好评。首此影响，这次官方决定向教育机关与医疗设施免费公开一部分素材。</p>
-                  </a></li>
-                  <li><a target="_blank" href="https://news.dmzj.com/article/47467.html">
-                    <img src="img/coverwork.jpg">
-                    <h1>CloverWorks正式从A-1 Pictures分离成为独立公司</h1>
-                  <p>今日动画制作公司CloverWorks于官网上公布正式从A-1 Pictures分离，成为独立公司。</p>
-                  </a></li>
-                </ul>
-          </div>
-          <div id="left">
-          <div class=rolling >
-            <h1>rock and roll!!!</h1>
-                <div class="carousel-wrap" id="carousel">
-                    <transition-group tag="ul" class='slide-ul' name="list">
-                      <li v-for="(list,index) in slideList" :key="index" v-show="index===currentIndex" @mouseenter="stop" @mouseleave="go">
-                          <a :href="list.clickUrl" >
-                      <img :src="list.image" :alt="list.desc">
-                          </a>
-                      </li>
-                        </transition-group>
-                        <div class="carousel-items">
-                      <span v-for="(item,index) in slideList.length" :class="{'active':index===currentIndex}" @mouseover="change(index)"></span>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>喜欢的东西</h2>
+      <h5>原图及相关图片</h5>
+      <div class="fakeimg">
+
+            <div id="myCarousel" class="carousel slide">
+                    <!-- 轮播（Carousel）指标 -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                        <li data-target="#myCarousel" data-slide-to="4"></li>
+                        <li data-target="#myCarousel" data-slide-to="5"></li>
+                    </ol>   
+                    <!-- 轮播（Carousel）项目 -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="resourse/vue/theassassin's.jpg" alt="刺客信条">
+                            <div class="carousel-caption">刺客信条</div>
                         </div>
-                </div>
-          </div>
-          <div class="text">
-              <ul>
-                <li><a target="_blank" href=""></a>
-                  <h1></h1>
-                  
-                </li>
-              </ul>
-          </div>
-        </div>
-        
+                        <div class="item">
+                            <img src="resourse/vue/secound.jpg" alt="黑魂">
+                            <div class="carousel-caption">黑暗之魂III</div>
+                        </div>
+                        <div class="item">
+                            <img src="resourse/vue/three.jpg" alt="使命召唤">
+                            <div class="carousel-caption">使命召唤</div>
+                        </div>
+                        <div class="item">
+                            <img src="resourse/vue/four.jpg" alt="shilaimu">
+                            <div class="carousel-caption">关于我转生成史莱姆这件事</div>
+                        </div>
+                        <div class="item">
+                            <img src="resourse/vue/five.jpg" alt="overload">
+                            <div class="carousel-caption">OVERLOADIII</div>
+                        </div>
+                        <div class="item">
+                            <img src="resourse/vue/six.jpg" alt="fade">
+                            <div class="carousel-caption">FADE</div>
+                        </div>
+                   
+                    </div>
+                    <!-- 轮播（Carousel）导航 -->
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev" >
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next" >
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div> 
 
-        </div>
-     
-  </div>
-  </div>
+      </div>
+      <P></P>
+      <h3>学习笔记速览</h3>
+      <p>看看我都学了什么</p>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a target="_blank" href="https://analytics.google.com/analytics/web/provision/?authuser=0#provision/SignUp/">Google Analytics（分析）</a></li>
+        <li><a target="_blank" href="http://open.163.com/special/opencourse/buildingdynamicwebsites.html">哈佛大学公开课：构建动态网站</a></li>
+        <li><a target="_blank" href="https://www.vue-js.com/topic/5bbaaf0860f64f2e5095886f">最有效、最全的Vue 2.0 学习路线，各个阶段适用</a></li>
+        <li><a target="_blank" href="http://www.runoob.com/linux/linux-command-manual.html">Linux 命令大全</a></li>
+        <li><a target="_blank" href="http://www.ruanyifeng.com/blog/2013/01/javascript_source_map.html">JavaScript Source Map 详解</a></li>
+        <li><a target="_blank" href="https://www.zhihu.com/question/20929391">怎么加快网页编写速度？(知乎原文)</a></li>
+      </ul>
+      <hr class="hidden-sm hidden-md hidden-lg">
+    </div>
 
-  <div class="footer">
-      <h1>这里是页脚</h1>
-      <p>这里呢两页网站就都完了，国庆节时间比较紧，也不知道能完成到什么程度，不过这个网页我一定会一直做下去的。
-        </p>
-        <div id="time1">
-          {{ message }}
-        </div>
-      <h2><a href="index.html">返回主页</a></h2>
+
+
+    <div class="col-sm-8">
+      <h2>怎么加快网页编写速度？</h2>
+      <p></p>
+      <p>方法:<br/>
+            1.从布局开始到掌握细节，明确把握整体。仔细观察设计图，划分区域，相似区块归类。<br/>
+            2.整理自己常用的CSS组件以及特殊代码和样式，集合自己的一套命名方式，随时调用。<br/>
+            3.加强HTML语义了解，细化调整，控制好每一个元素，不让网页一层不变。<br/>
+            4.学会查找资料，收集常用知识，做好HTML基础。<br/>
+            5.微创新，熟练运用公共架构，节省编写成本。<br/>
+            6.练习手速，慢不要紧，要慢得有效率，有理由。过程迭代，及时反馈。多思考，忌浮躁。<br/>
+      </p>
+      <p>工具<br/>
+            插件：zencoding（emmet）<br/>
+            CSS样式：sass&less<br/>
+            JS：coffeescript<br/>
+            调试工具：firebug(firefox)、chrome调试器<br/>
+            站点<br/>
+            <a href="https://link.zhihu.com/?target=http%3A//www.cnblogs.com/amboyna/archive/2008/05/16/1199572.html">1.网页设计和设计灵感的12个无价站点</a><br/>
+            <a href="https://link.zhihu.com/?target=http%3A//blueprintcss.org/">2.Blueprint: A CSS Framework</a><br/>
+            <a href="https://link.zhihu.com/?target=http%3A//www.chinaz.com/zt/div-css/">3.Web标准化 DIV+CSS专题</a><br/>
+            <a href="https://link.zhihu.com/?target=http%3A//www.52css.com/article.asp%3Fid%3D987">4.css和javascript在IE和Firefox中二十三个不同点</a><br/>
+            <a href="https://link.zhihu.com/?target=http%3A//blog.youyo.name/archives/lazy-frontend-developer.html">5.前端开发懒人时代已到来</a><br/>
+            <a href="https://link.zhihu.com/?target=http%3A//www.baidu.com/link%3Furl%3DoX2WGJqjJ4zBBpC8yDF8xDh5qDadBpZmDXA0hIZPKduy2q">6.GitHub Pages</a></p><br/>
+      <h2></h2>
+      <h5></h5>
+      <div class="fakeimg"><img src="" alt=""></div>
+      <p></p>
+    </div>
   </div>
-<script src="main.js"></script>
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p>页面重构 bootstrap</p>
+  <p>响应式适应电脑端手机端，页面结构来源菜鸟联盟</p>
+  <a target="_blank" href="index.html">返回主页</a>
+</div>
 </body>
-
 </html>

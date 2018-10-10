@@ -18,38 +18,20 @@ var carousel=new Vue({
           {
               "clickUrl": "#",
               "desc": "第一张",
-              "image": "resourse/rolling/angleofdezth.png"           
+              "image": "resourse/vue/theassassin's.jpg"
+
+              
           },
           {
-             "clickUrl": "#",
-             "desc": "第二张",
-             "image": "resourse/rolling/myhero.png"
+          "clickUrl": "#",
+          "desc": "第二张",
+          "image": "resourse/rolling/myhero.png"
           },
           {
               "clickUrl": "#",
               "desc": "第三张",
-              "image": "resourse/rolling/overload.jpg"
-          },
-          {
-            "clickUrl": "#",
-            "desc": "第四张",
-            "image": "resourse/rolling/renya.png"
-        },
-        {
-            "clickUrl": "#",
-            "desc": "第五张",
-            "image": "resourse/rolling/shilaimu.png"
-        },
-        {
-            "clickUrl": "#",
-            "desc": "第六张",
-            "image": "resourse/rolling/workcell.png"
-        },
-        {
-            "clickUrl": "#",
-            "desc": "第七张",
-            "image": "resourse/rolling/"
-        }
+              "image": "../resourse/rolling/overload.jpg"
+          }
       ],
       currentIndex: 0,
       timer: ''
