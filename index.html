@@ -13,9 +13,7 @@
   <script src="js/bootstrap.min.js"></script>
   <script>
     $("#myCarousel").carousel('cycle');
-    $('#identifier').carousel({
-    interval: 1000
-})
+    $('#identifier').carousel({interval: 500})
   </script>
 </head>
 <body>
@@ -55,7 +53,7 @@
       <h5>原图及相关图片</h5>
       <div class="fakeimg">
 
-            <div id="myCarousel" class="carousel slide">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
                     <!-- 轮播（Carousel）指标 -->
                     <ol class="carousel-indicators">
                         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -102,7 +100,7 @@
                         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
-                </div> 
+            </div> 
 
       </div>
       <P></P>
